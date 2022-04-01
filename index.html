@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css" />
+  <title>Material Expense</title>
+</head>
+<body>
+  <section id="title">
+    <h1>Material Expense</h1>
+    <div class="flex">
+      <p class="greyed">$</p>
+      <p id="price">0</p>
+    </div>
+  </section>
+  <form id="selections" onsubmit="return formSubmit()">
+    <!-- MAIN SECTION HERE! -->
+    <div>
+      <h2>Gas Burner</h2>
+      <input type="radio" id="gb-1" name="gb" value="500" />
+      <label for="gb-1" class="button enabled">
+        Natural Gas
+      </label>
+      
+      <input type="radio" id="gb-2" name="gb" value="1000" />
+      <label for="gb-2" class="button enabled">
+        Liquid Propane
+      </label>
+    </div>
+
+    <div>
+      <h2>Add Polyester all weather cover</h2>
+      <input type="radio" id="po-1" name="po" value="0" />
+      <label for="po-1" class="button enabled">
+        No
+      </label>
+      
+      <input type="radio" id="po-2" name="po" value="500" />
+      <label for="po-2" class="button enabled">
+        Yes
+      </label>
+    </div>
+
+    <div>
+      <h2>Firebowl Size</h2>
+      <input type="radio" id="fs-1" name="fs" value="200" />
+      <label for="fs-1" class="button enabled">
+        30*
+      </label>
+      
+      <input type="radio" id="fs-2" name="fs" value="400" disabled="disabled" />
+      <label for="fs-2" class="button disabled">
+        32*
+      </label>
+    </div>
+
+    <p>(I suppose you'd have a submit button)</p>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="/index.js"></script>
+</body>
+</html>
